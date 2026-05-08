@@ -21,21 +21,6 @@ public final class VectorMath {
     }
 
     public static float cosineSimilarity(float[] vector1, float[] vector2){
-        if(vector1.length != vector2.length){
-            throw new IllegalArgumentException("Vector Dimensions Must Match");
-        }
-        double dotProduct = 0.0;
-        double norm1 = 0.0;
-        double norm2 = 0.0;
-
-        for(int i =0 ; i< vector1.length; i++){
-            dotProduct += vector1[i] * vector2[i];
-            norm1 += vector1[i] * vector1[i];
-            norm2 += vector2[i]* vector2[i];
-        }
-        if(norm1 == 0.0 || norm2 == 0.0){
-            return 0.0f;
-        }
-        return (float)(dotProduct / (Math.sqrt(norm1) * Math.sqrt(norm2)));
+        if(vector1.length != vector2.length)
     }
 }

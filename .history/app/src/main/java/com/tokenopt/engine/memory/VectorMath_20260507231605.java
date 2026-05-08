@@ -36,6 +36,6 @@ public final class VectorMath {
         if(norm1 == 0.0 || norm2 == 0.0){
             return 0.0f;
         }
-        return (float)(dotProduct / (Math.sqrt(norm1) * Math.sqrt(norm2)));
+        return (float)(dotProduct / (Math.sqrt(norm1)))
     }
 }

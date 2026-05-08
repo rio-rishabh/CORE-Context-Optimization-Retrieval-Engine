@@ -30,12 +30,6 @@ public final class VectorMath {
 
         for(int i =0 ; i< vector1.length; i++){
             dotProduct += vector1[i] * vector2[i];
-            norm1 += vector1[i] * vector1[i];
-            norm2 += vector2[i]* vector2[i];
-        }
-        if(norm1 == 0.0 || norm2 == 0.0){
-            return 0.0f;
-        }
-        return (float)(dotProduct / (Math.sqrt(norm1) * Math.sqrt(norm2)));
+            norm1 += vector1[i]
     }
 }
