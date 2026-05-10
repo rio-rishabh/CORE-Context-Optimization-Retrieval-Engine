@@ -38,4 +38,5 @@ public final class VectorMath {
         }
         return (float)(dotProduct / (Math.sqrt(norm1) * Math.sqrt(norm2)));
     }
+    
 }
