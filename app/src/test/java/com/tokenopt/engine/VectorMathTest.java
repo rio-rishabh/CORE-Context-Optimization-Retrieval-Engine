@@ -24,7 +24,7 @@ public class VectorMathTest {
     }
 
     @Test
-    public void cosineSimilarity_OppositeVectors_returnsMinusOne() {\
+    public void cosineSimilarity_OppositeVectors_returnsMinusOne() {
         float[] vector1 = {1.0f, 0.0f, 0.0f};
         float[] vector2 = {-1.0f, 0.0f, 0.0f};
         float result = VectorMath.cosineSimilarity(vector1, vector2);
