@@ -27,7 +27,7 @@ public class ChatOrchestratorTest {
         }
 
         ChatContext ctx = orchestrator.buildContextWithMemories(conversationId, "what is the capital of France?");
-        assertTrue(ctx.retrieveMemories().stream().anyMatch(m -> m.text().contains("What is the Capitol")));
+        assertTrue(ctx.retrieveMemories().stream().anyMatch(m -> m.text().contains("What is the capital")));
         assertFalse(ctx.systemContext().contains("Corner"));
     }
 }
