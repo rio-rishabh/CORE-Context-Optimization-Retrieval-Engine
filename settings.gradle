@@ -11,4 +11,4 @@ plugins {
 }
 
 rootProject.name = 'token-optimization-engine'
-include('app')
+include('app', 'api', 'server')
